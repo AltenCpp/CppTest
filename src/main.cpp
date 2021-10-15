@@ -11,7 +11,7 @@ int main(){
     new Square(5),
     new Circle(10)
   };
-  int j=0;
+  int j;
   for(size_t i=0; i<size;i++){
     std::cout << "-------------------------------------------------------------" << std::endl;
     std::cout << "Area: " << shapes[i]->area() << std::endl;
