@@ -1,0 +1,26 @@
+src/polygon.h:17:4: warning:inconclusive: Class 'Shape' which has virtual members does not have a virtual destructor. [virtualDestructor]
+  ~Shape() = default;
+   ^
+src/polygon.h:23:3: style: Class 'Triangle' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+  Triangle(int side);
+  ^
+src/polygon.h:39:3: style: Class 'Square' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+  Square(int side);
+  ^
+src/polygon.h:48:3: style: Class 'Circle' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+  Circle(int diameter);
+  ^
+src/main.cpp:14:8: style: Variable 'j' is assigned a value that is never used. [unreadVariable]
+  int j=0;
+       ^
+src/test.cpp:4:25: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
+bool testEq(std::string title,Shape &a, Shape &b) {
+                        ^
+src/test.cpp:4:38: style: Parameter 'a' can be declared with const [constParameter]
+bool testEq(std::string title,Shape &a, Shape &b) {
+                                     ^
+src/test.cpp:4:48: style: Parameter 'b' can be declared with const [constParameter]
+bool testEq(std::string title,Shape &a, Shape &b) {
+                                               ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
