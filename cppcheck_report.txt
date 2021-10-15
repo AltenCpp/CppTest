@@ -10,9 +10,6 @@ src/polygon.h:39:3: style: Class 'Square' has a constructor with 1 argument that
 src/polygon.h:48:3: style: Class 'Circle' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
   Circle(int diameter);
   ^
-src/main.cpp:14:8: style: Variable 'j' is assigned a value that is never used. [unreadVariable]
-  int j=0;
-       ^
 src/test.cpp:4:25: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
 bool testEq(std::string title,Shape &a, Shape &b) {
                         ^
