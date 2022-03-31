@@ -13,11 +13,20 @@ src/polygon.h:48:3: style: Class 'Circle' has a constructor with 1 argument that
 src/test.cpp:4:25: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
 bool testEq(std::string title,Shape &a, Shape &b) {
                         ^
+src/test.cpp:17:28: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
+bool testNotEq(std::string title,Shape &a, Shape &b) {
+                           ^
 src/test.cpp:4:38: style: Parameter 'a' can be declared with const [constParameter]
 bool testEq(std::string title,Shape &a, Shape &b) {
                                      ^
 src/test.cpp:4:48: style: Parameter 'b' can be declared with const [constParameter]
 bool testEq(std::string title,Shape &a, Shape &b) {
                                                ^
+src/test.cpp:17:41: style: Parameter 'a' can be declared with const [constParameter]
+bool testNotEq(std::string title,Shape &a, Shape &b) {
+                                        ^
+src/test.cpp:17:51: style: Parameter 'b' can be declared with const [constParameter]
+bool testNotEq(std::string title,Shape &a, Shape &b) {
+                                                  ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
 
