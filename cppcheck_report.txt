@@ -28,5 +28,8 @@ bool testNotEq(std::string title,Shape &a, Shape &b) {
 src/test.cpp:17:51: style: Parameter 'b' can be declared with const [constParameter]
 bool testNotEq(std::string title,Shape &a, Shape &b) {
                                                   ^
-nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+test/shape_gtest.cpp:6:0: style: The function 'SetUp' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
 
