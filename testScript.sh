@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if (g++ src/test.cpp src/polygon.cpp -o test.out && ./test.out)
+if (g++ test/test.cpp src/polygon.cpp -Isrc -o test.out && ./test.out)
 then
   echo "----------------------"
   echo "Tests SUCCESSFUL"
