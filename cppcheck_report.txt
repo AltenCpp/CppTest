@@ -10,22 +10,22 @@ src/polygon.h:39:3: style: Class 'Square' has a constructor with 1 argument that
 src/polygon.h:48:3: style: Class 'Circle' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
   Circle(int diameter);
   ^
-src/test.cpp:4:25: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
+test/test.cpp:4:25: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
 bool testEq(std::string title,Shape &a, Shape &b) {
                         ^
-src/test.cpp:17:28: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
+test/test.cpp:17:28: performance: Function parameter 'title' should be passed by const reference. [passedByValue]
 bool testNotEq(std::string title,Shape &a, Shape &b) {
                            ^
-src/test.cpp:4:38: style: Parameter 'a' can be declared with const [constParameter]
+test/test.cpp:4:38: style: Parameter 'a' can be declared with const [constParameter]
 bool testEq(std::string title,Shape &a, Shape &b) {
                                      ^
-src/test.cpp:4:48: style: Parameter 'b' can be declared with const [constParameter]
+test/test.cpp:4:48: style: Parameter 'b' can be declared with const [constParameter]
 bool testEq(std::string title,Shape &a, Shape &b) {
                                                ^
-src/test.cpp:17:41: style: Parameter 'a' can be declared with const [constParameter]
+test/test.cpp:17:41: style: Parameter 'a' can be declared with const [constParameter]
 bool testNotEq(std::string title,Shape &a, Shape &b) {
                                         ^
-src/test.cpp:17:51: style: Parameter 'b' can be declared with const [constParameter]
+test/test.cpp:17:51: style: Parameter 'b' can be declared with const [constParameter]
 bool testNotEq(std::string title,Shape &a, Shape &b) {
                                                   ^
 test/shape_gtest.cpp:6:0: style: The function 'SetUp' is never used. [unusedFunction]
